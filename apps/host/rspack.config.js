@@ -43,6 +43,6 @@ export default defineConfig({
                 "react-dom":{ singleton:true, eager:true},
                  "react-router-dom": { singleton: true, eager: true },
             }
-        })
+        }),
     ]
 })

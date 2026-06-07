@@ -8,12 +8,13 @@
   },
   "type": "module",
   "devDependencies": {
+    "@arrise/event-bus": "workspace:*",
+    "@arrise/shared-auth": "workspace:*",
+    "@arrise/shared-ui": "workspace:*",
     "@rspack/cli": "^2.0.6",
     "@rspack/core": "^2.0.6",
     "@rspack/dev-server": "^2.0.3",
-     "@arrise/shared-ui": "workspace:*",
-     "@arrise/shared-auth": "workspace:*",
-     "@arrise/event-bus": "workspace:*"
+    "webpack-bundle-analyzer": "^5.3.0"
   },
   "dependencies": {
     "@module-federation/runtime-tools": "^2.5.1",
