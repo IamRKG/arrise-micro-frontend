@@ -79,7 +79,8 @@ jobs:
     needs: [detect-changes, deploy-product, deploy-checkout, deploy-cart]
     if: |
       always() &&
-      needs.detect-changes.outputs.host == 'true'
+      needs.detect-changes.outputs.host == 'true' &&
+      !contains(needs.*.result, 'failure')
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
