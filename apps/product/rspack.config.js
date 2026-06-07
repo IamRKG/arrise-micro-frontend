@@ -5,7 +5,7 @@
     entry: "./src/index.js",                  
     output: {                                      
       uniqueName: "product",
-      publicPath:"http://localhost:3001/"
+      publicPath: "auto"
 
     },                                                                                     
     devServer: {                                                                           

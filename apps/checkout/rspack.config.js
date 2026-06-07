@@ -5,7 +5,7 @@
     entry: "./src/index.js",                  
     output: {                                      
       uniqueName: "checkout",
-      publicPath:"http://localhost:3002/"                      
+      publicPath: "auto"                      
     },                                                                                     
     devServer: {                                                                           
       port: 3002,                                                                          

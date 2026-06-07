@@ -6,7 +6,7 @@ export default defineConfig({
   entry: "./src/index.js",
   output: {
     uniqueName: "cart",
-    publicPath: "http://localhost:3003/"
+    publicPath: "auto"
   },
   devServer: {
     port: 3003,
