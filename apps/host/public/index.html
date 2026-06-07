@@ -1,11 +1,37 @@
- <!DOCTYPE html>                             
-  <html lang="en">                                                                         
-  <head>                                                                                 
-    <meta charset="UTF-8" />                                                               
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />               
-    <title>Arrise - Host Shell</title>                                                     
-  </head>                                                                                  
-  <body>                                                                                 
-    <div id="root"></div>                         
-  </body>                                                                                  
-  </html> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arrise - Host Shell</title>
+
+  <!-- DNS prefetch — resolve remote domains early -->
+  <link rel="dns-prefetch" href="https://arrise-product-mfe.vercel.app" />
+  <link rel="dns-prefetch" href="https://arrise-checkout-mfe.vercel.app" />
+  <link rel="dns-prefetch" href="https://arrise-cart-mfe.vercel.app" />
+
+  <!-- Preconnect — establish TCP + TLS early -->
+  <link rel="preconnect" href="https://arrise-product-mfe.vercel.app" crossorigin />
+  <link rel="preconnect" href="https://arrise-checkout-mfe.vercel.app" crossorigin />
+  <link rel="preconnect" href="https://arrise-cart-mfe.vercel.app" crossorigin />
+
+  <!-- Inline critical CSS for shell skeleton -->
+  <style>
+    body { margin: 0; font-family: system-ui, sans-serif; }
+    .mfe-skeleton {
+      min-height: 400px;
+      background: #f0f0f0;
+      border-radius: 8px;
+      margin: 16px;
+      animation: pulse 1.5s ease-in-out infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.5; }
+    }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+</body>
+</html>

@@ -1,6 +1,5 @@
 import { defineConfig } from "@rspack/cli";
-import { rspack } from "@rspack/core"
-
+import { rspack } from "@rspack/core";
 
 export default defineConfig({
     entry: "./src/index.js",
@@ -46,5 +45,4 @@ export default defineConfig({
             }
         })
     ]
-
 })

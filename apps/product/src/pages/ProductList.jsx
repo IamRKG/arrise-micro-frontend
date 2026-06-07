@@ -14,8 +14,7 @@
     const cart = eventBus.getStore("cart") || []; 
     cart.push(product);                      
     eventBus.setStore("cart", cart);               
-    eventBus.emit("ADD_TO_CART", product);                                            
-    alert(`${product.name} added to cart!`);      
+    eventBus.emit("ADD_TO_CART", product);                                                
   };                                                                              
                                               
     return (                                                                          
