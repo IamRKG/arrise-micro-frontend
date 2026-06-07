@@ -1,0 +1,22 @@
+{
+  "name": "@arrise/checkout",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "rspack serve",
+    "build": "rspack build"
+  },
+  "type": "module",
+  "dependencies": {
+    "@module-federation/runtime-tools": "^2.5.1",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "@arrise/shared-ui": "workspace:*",
+    "@arrise/shared-auth": "workspace:*",
+    "@arrise/event-bus": "workspace:*"
+  },
+  "devDependencies": {
+    "@rspack/cli": "^2.0.6",
+    "@rspack/core": "^2.0.6"
+  }
+}

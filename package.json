@@ -1,0 +1,9 @@
+{
+  "name": "arrise-frontend-arch",
+  "version": "1.0.0",
+  "private":true,
+  "scripts": {
+    "dev": "pnpm -r --parallel run dev"
+  },
+  "type": "module"
+}

@@ -1,0 +1,11 @@
+  {
+    "buildCommand": "cd ../.. && pnpm install && pnpm --filter @arrise/cart build",
+    "outputDirectory": "dist",
+    "framework": null,
+    "headers": [
+      {
+        "source": "/remoteEntry.js",
+        "headers": [{ "key": "Access-Control-Allow-Origin", "value": "*" }]
+      }
+    ]
+  }

@@ -1,0 +1,25 @@
+{
+  "name": "@arrise/host",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "rspack serve",
+    "build": "rspack build"
+  },
+  "type": "module",
+  "devDependencies": {
+    "@rspack/cli": "^2.0.6",
+    "@rspack/core": "^2.0.6",
+    "@rspack/dev-server": "^2.0.3",
+     "@arrise/shared-ui": "workspace:*",
+     "@arrise/shared-auth": "workspace:*",
+     "@arrise/event-bus": "workspace:*"
+  },
+  "dependencies": {
+    "@module-federation/runtime-tools": "^2.5.1",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "react-router-dom": "^7.17.0",
+    "vue": "^3.5.35"
+  }
+}
